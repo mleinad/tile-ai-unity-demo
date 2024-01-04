@@ -1,0 +1,18 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/buttonStyle.uss?fileID=7433441132597879392&amp;guid=f64b8d60c0aa067498b83842fd1cd9ea&amp;type=3#buttonStyle" />
+    <Style src="project://database/Assets/progressBar.uss?fileID=7433441132597879392&amp;guid=12eb9d5c843c80f4289a81c6f37f51df&amp;type=3#progressBar" />
+    <ui:VisualElement style="flex-grow: 1; background-color: rgba(255, 255, 255, 0); flex-direction: row; flex-wrap: wrap; flex-basis: auto; align-items: auto;">
+        <ui:VisualElement style="flex-direction: column; justify-content: flex-end; align-items: flex-end; background-color: rgba(127, 221, 183, 0.16); padding-top: 3%; padding-right: 1%; padding-bottom: 3%; padding-left: 2%; width: 15%; height: 100%; margin-top: 0; margin-bottom: 0; flex-grow: 0; margin-left: 0; margin-right: 0;">
+            <ui:VisualElement style="flex-grow: 0; flex-shrink: 0; position: relative; width: 100%; height: 25%; background-color: rgba(127, 228, 238, 0.81); border-left-color: rgb(93, 142, 115); border-right-color: rgb(93, 142, 115); border-top-color: rgb(93, 142, 115); border-bottom-color: rgb(93, 142, 115); border-top-width: 4px; border-right-width: 4px; border-bottom-width: 4px; border-left-width: 4px; border-top-left-radius: 9px; border-top-right-radius: 9px; border-bottom-right-radius: 9px; border-bottom-left-radius: 9px; justify-content: space-around; align-items: center; flex-direction: column-reverse;">
+                <ui:ProgressBar value="36.9" title="CO2" name="ProgressBar" style="flex-direction: column; background-color: rgba(202, 68, 68, 0); -unity-background-image-tint-color: rgb(241, 24, 24); width: 90%; height: 25%;" />
+                <ui:ProgressBar value="18.7" title="Cº" high-value="70" style="width: 90%; height: 25%;" />
+                <ui:ProgressBar value="18.7" title="Bio" high-value="26.1" style="width: 90%; height: 25%;" />
+            </ui:VisualElement>
+            <ui:VisualElement style="width: 100%; height: 70%; align-items: auto; justify-content: space-around;">
+                <ui:Button display-tooltip-when-elided="true" name="seedsButton" class="button" style="background-image: url(&apos;project://database/Assets/Scenes/Sprites/%E2%80%94Pngtree%E2%80%94snacks%20dried%20fruit%20nuts%20melon_4676537.png?fileID=2800000&amp;guid=6a592247549520c458bd219fd8151a80&amp;type=3#—Pngtree—snacks dried fruit nuts melon_4676537&apos;); -unity-background-image-tint-color: rgb(255, 255, 255);" />
+                <ui:Button text="&#10;" display-tooltip-when-elided="true" name="treeButton" class="button" style="flex-grow: 0; background-image: url(&apos;project://database/Assets/Scenes/Sprites/tree.png?fileID=2800000&amp;guid=0e2468ac89c01904cacdf0de9db5b565&amp;type=3#tree&apos;); -unity-background-image-tint-color: rgb(255, 254, 254);" />
+                <ui:Button display-tooltip-when-elided="true" name="tileButton" class="button" style="background-image: url(&apos;project://database/Assets/Scenes/Sprites/vecteezy_low-poly-cat-statue-on-a-transparent-background_22419481_818.png?fileID=2800000&amp;guid=7a2fb04fb0def20478b499f4db866cf3&amp;type=3#vecteezy_low-poly-cat-statue-on-a-transparent-background_22419481_818&apos;); -unity-background-image-tint-color: rgb(255, 255, 255);" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
