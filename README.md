@@ -1,13 +1,48 @@
-Para a geração do mar foi utilizada o algoritmo de Perlin Noise e a sua função matematica para gerar as alturas do terreno.
-O xcoord e o ycoord são as coordenadas utilizadas para calcular o Perlin Noise.
-A relação entre o tamanho do terreno ('width' e 'height) a escala ('scale') e os desvios ('offsetX' e 'offsetY') aleatórios, permitem que o resultado da funcao de Perlin seja variavel, e assim, fazer com que o terreno tenha padrões diferentes.
-O resultado da função Perlin devolve o valor entre 0 e 1, cada ponto do terreno terá um valor corresponde ao resultado da funcao.
+# AI Tile-Based Game – Unity
 
-O uso de Perlin Noise neste contexto resulta num "terreno/mar" com aspecto natural e dinamico. Sendo que os desvios "offset X e Y" são aleatorios, cria uma
-sensação muito mais realista e dinamica.
+## Overview
 
-O metodo update é chamada a cada frame, atualizando assim os dados do terreno, dando-lhes movimento, simulando as ondas do mar.
-Os resultados das alturas no método Generate Heights são armazenados num array bidimensional.
-O metodo Calculate Height recebe as coordenadas X e Y e usa o Perlin Noise com os desvios para calcular a altura.
+This game was originally developed over the course of a week as part of the **SAP Game Changing Games** project, an international collaboration between universities aimed at tackling rising global challenges through games.  
 
-No geral, o resultado é um terreno com geração  procedimental que altera de forma dinâmica, dando, neste caso, a sensação do movimento das ondas do mar.
+I worked as the **sole programmer** and part **game designer** alongside 3D artists to develop a **tile-based strategy game** that educates players about **deforestation**.  
+
+Later, I repurposed this project for an **Artificial Intelligence class** along side a colleague by expanding the enemy AI capabilities and introducing **procedural generation**.
+
+---
+
+## Features
+
+- **Tile-Based Strategy**: Each hexagon acts as a tile on a grid system developed entirely from scratch.  
+- **AI Enemy**: Bulldozers traverse the grid using multiple algorithms:
+  - Depth-First Search (DFS)
+  - Breadth-First Search (BFS)
+  - A* Search
+- **Procedural Generation**: Levels are dynamically generated to increase replayability.  
+- **Graph Traversal Demonstration**: Each tile acts as a node, allowing visualization of AI pathfinding algorithms.  
+
+---
+
+## Procedural Terrain & Sea Generation
+
+The sea and terrain are generated using **Perlin Noise**, producing smooth, natural variations.
+
+---
+
+## Gameplay
+
+- Players interact with a hexagonal grid with drag and drop base mechanic, strategizing against AI-controlled bulldozers.  
+- The game demonstrates the impact of deforestation while showcasing AI techniques in pathfinding.  
+
+---
+
+## Technical Details
+
+- **Engine**: Unity  
+- **Languages**: C#  
+- **Systems Developed From Scratch**:
+  - Hexagonal grid system
+  - Pathfinding and AI navigation
+  - Procedural level generation
+
+---
+
